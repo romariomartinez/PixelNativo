@@ -701,3 +701,63 @@ footer {
     margin-top: 30px;
   }
 }
+
+/* Responsive global */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* Ajustes generales para móviles */
+@media (max-width: 768px) {
+  .container, .contenedor-hero, .contenedor-hero-slack, .fila {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0;
+  }
+
+  .hero-texto h1 {
+    font-size: 32px;
+  }
+
+  .resaltado {
+    font-size: 36px;
+  }
+
+  .boton-hero, .boton-slack, .boton-plan {
+    width: 90%;
+    max-width: 300px;
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  .servicios-contenedor,
+  .planes-grid,
+  .portafolio-galeria {
+    flex-direction: column;
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  .contacto-contenedor {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .hero-imagen {
+    margin-top: 20px;
+  }
+}
