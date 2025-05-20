@@ -24,3 +24,7 @@ document.getElementById('formContacto').addEventListener('submit', function (e) 
 
   window.open(url, '_blank'); // Abre WhatsApp Web
 });
+// Toggle menú móvil
+document.getElementById("menu-toggle").addEventListener("click", function () {
+  document.getElementById("nav-list").classList.toggle("active");
+});
